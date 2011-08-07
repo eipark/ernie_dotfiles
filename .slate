@@ -1,0 +1,20 @@
+config defaultToCurrentScreen true
+config nudgePercentOf screenSize
+config resizePercentOf screenSize
+config secondsBetweenRepeat 0.1
+config checkDefaultsOnLoad true
+config focusCheckWidthMax 3000
+
+alias left-half corner top-left resize:screenSizeX/2;screenSizeY 
+alias right-half move screenSizeX/2;0 screenSizeX/2;screenSizeY 
+alias top-half corner top-left resize:screenSizeX;screenSizeY/2
+alias bottom-half move 0;screenSizeY/2 screenSizeX;screenSizeY/2
+alias maximize corner top-left resize:screenSizeX;screenSizeY
+
+
+bind left:cmd,alt,ctrl 	${left-half} 
+bind right:cmd,alt,ctrl ${right-half}
+bind up:cmd,alt,ctrl 	${top-half}
+bind down:cmd,alt,ctrl	${bottom-half}
+
+bind m:cmd,alt,ctrl  	${maximize}
