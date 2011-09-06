@@ -34,7 +34,7 @@ alias pro="mate ~/.bash_profile"
 alias srcrc="source ~/.bashrc"
 alias srcpro="source ~/.bash_profile"
 alias ~="cd ~"
-
+alias gogit="cd ~/git_repos"
 
 # ====================
 # EDITOR and  PAGER
