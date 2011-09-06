@@ -33,7 +33,7 @@ alias rc="mate ~/.bashrc"
 alias pro="mate ~/.bash_profile"
 alias srcrc="source ~/.bashrc"
 alias srcpro="source ~/.bash_profile"
-
+alias ~="cd ~"
 
 
 # ====================

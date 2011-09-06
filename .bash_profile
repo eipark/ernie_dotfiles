@@ -6,7 +6,7 @@ if [ -f ~/.bashrc ]; then
 fi
 
 # User specific environment and startup programs
-PATH=$PATH:/usr/local/bin:/usr/local/sbin
+PATH=$PATH:/usr/local/bin:/usr/local/sbin:/opt/local/bin
 
 # Conditional additions
 if [ -d /Developer/Tools ];then
@@ -30,4 +30,13 @@ export PATH="$HOME/bin:$PATH"
 # source ~/bin/git-completion.bash
 # PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 
+
+
+##
+# Your previous /Users/ernestipark/.bash_profile file was backed up as /Users/ernestipark/.bash_profile.macports-saved_2011-08-30_at_01:34:41
+##
+
+# MacPorts Installer addition on 2011-08-30_at_01:34:41: adding an appropriate PATH variable for use with MacPorts.
+export PATH=/opt/local/bin:/opt/local/sbin:$PATH
+# Finished adapting your PATH environment variable for use with MacPorts.
 
