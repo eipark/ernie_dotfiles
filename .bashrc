@@ -98,7 +98,13 @@ function prompt_fancy {
   #[[ $(type -t rvm) = "function" ]] && PS1="${PS1} ${R}[\$(rvm current)]"
   # git status
   [[ $(type -t __git_ps1) = "function" ]] && PS1="${PS1} ${G}"'$(__git_ps1 "[%s]")'
-  PS1="${PS1} \n${R}♥  ${W}"
+
+	if [ -n "$SSH_CLIENT" ]; then
+    xxx="--- SSH"
+	else
+		xxx=""
+	fi
+	PS1="${PS1} ${xxx} \n${R}♥  ${W} "
 
   PS2="> "
 }
