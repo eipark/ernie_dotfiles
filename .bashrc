@@ -29,15 +29,15 @@ fi
 test -n "$LS_COMMON" && alias ls="command ls $LS_COMMON"
 alias ll="ls -l"
 alias la="ls -la"
-alias rc="mate ~/.bashrc"
-alias pro="mate ~/.bash_profile"
+alias rc="vim ~/.bashrc"
+alias pro="vim ~/.bash_profile"
 alias srcrc="source ~/.bashrc"
 alias srcpro="source ~/.bash_profile"
 alias ~="cd ~"
 alias gogit="cd ~/git_repos"
 alias m="mate ."
 alias school="cd ~/Dropbox/School/Year4"
-
+alias g="git"
 # ====================
 # EDITOR and  PAGER
 # ====================
