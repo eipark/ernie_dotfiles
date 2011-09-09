@@ -35,6 +35,8 @@ alias srcrc="source ~/.bashrc"
 alias srcpro="source ~/.bash_profile"
 alias ~="cd ~"
 alias gogit="cd ~/git_repos"
+alias m="mate ."
+alias school="cd ~/Dropbox/School/Year4"
 
 # ====================
 # EDITOR and  PAGER
