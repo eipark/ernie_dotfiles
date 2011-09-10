@@ -14,4 +14,4 @@
   ci = commit -am
 	st = status
 [core]
-	excludesfile = /Users/eipark/.gitignore_global
+	excludesfile = ~/.gitignore_global
