@@ -40,3 +40,4 @@ export PATH="$HOME/bin:$PATH"
 export PATH=/opt/local/bin:/opt/local/sbin:$PATH
 # Finished adapting your PATH environment variable for use with MacPorts.
 
+source /afs/csail/proj/courses/6.172/scripts/.bashrc

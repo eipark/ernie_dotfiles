@@ -13,3 +13,5 @@
   co = checkout
   ci = commit -am
 	st = status
+[core]
+	excludesfile = /Users/eipark/.gitignore_global
