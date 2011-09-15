@@ -7,6 +7,7 @@ for file in .*
 do
   if [ $file != . ] &&
      [ $file != .. ] &&
+		 [ $file != git-completion.bash ] &&
      [ $file != .git ]; then
     rm -fr ~/$file
     ln -Fs $DOTDIR/$file ~/$file
