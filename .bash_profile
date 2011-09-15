@@ -27,8 +27,8 @@ bind "set completion-ignore-case on"
 export BASH_ENV ENV PATH PS1 DISPLAY
 
 export PATH="$HOME/bin:$PATH"
-# source ~/bin/git-completion.bash
-# PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+source ~/bin/git-completion.bash
+#PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 
 
 
