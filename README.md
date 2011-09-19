@@ -1,0 +1,1 @@
+running ./link_dotfiles.sh will make symlinks for all the dotfiles into your ~ home directory. git-completion.bash should be in ~/bin and must be manually stored there for git completion/coloring to work properly

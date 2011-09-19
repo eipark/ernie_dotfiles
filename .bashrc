@@ -101,11 +101,11 @@ function prompt_fancy {
   [[ $(type -t __git_ps1) = "function" ]] && PS1="${PS1} ${G}"'$(__git_ps1 "[%s]")'
 
 	if [ -n "$SSH_CLIENT" ]; then
-    xxx="--- SSH"
+    xxx="${C}[----------------- SSH -----------------]\n"
 	else
 		xxx=""
 	fi
-	PS1="${PS1} ${xxx} \n${R}♥  ${W} "
+	PS1="${xxx}${PS1} \n${R}♥  ${W} "
 
   PS2="> "
 }
