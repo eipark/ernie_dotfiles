@@ -38,6 +38,7 @@ alias gogit="cd ~/git_repos"
 alias m="mate ."
 alias school="cd ~/Dropbox/School/Year4"
 alias g="git"
+alias v="vim"
 # ====================
 # EDITOR and  PAGER
 # ====================
