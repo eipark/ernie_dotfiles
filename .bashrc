@@ -62,6 +62,13 @@ if [ -f /opt/local/etc/bash_completion ]; then
 fi
 
 # ====================
+# Source file specific only to this computer
+# ====================
+if [ -f ~/.comp_specific_bashrc ] ; then
+	. ~/.comp_specific_bashrc
+fi
+
+# ====================
 # PROMPT
 # ====================
 # Colorsx`

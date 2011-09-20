@@ -30,7 +30,9 @@ export PATH="$HOME/bin:$PATH"
 source ~/bin/git-completion.bash
 #PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
 
-
+if [ -f ~/.comp_specific_bash_profile ]; then
+	. ~/.comp_specific_bash_profile
+fi
 
 ##
 # Your previous /Users/ernestipark/.bash_profile file was backed up as /Users/ernestipark/.bash_profile.macports-saved_2011-08-30_at_01:34:41
