@@ -5,16 +5,41 @@ config secondsBetweenRepeat 0.1
 config checkDefaultsOnLoad true
 config focusCheckWidthMax 3000
 
+# monitors
+alias mon-thunderbolt 2560x1440
+alias mon-air 1440x900
+
+
+# standard move aliases
 alias left-half corner top-left resize:screenSizeX/2;screenSizeY 
 alias right-half move screenSizeX/2;0 screenSizeX/2;screenSizeY 
 alias top-half corner top-left resize:screenSizeX;screenSizeY/2
 alias bottom-half move 0;screenSizeY/2 screenSizeX;screenSizeY/2
+alias top-left-corner corner top-left resize:screenSizeX/2;screenSizeY/2
+alias top-right-corner move screenSizeX/2;0 screenSizeX/2;screenSizeY/2
+alias bottom-left-corner move 0;screenSizeY/2 screenSizeX/2;screenSizeY/2
+alias bottom-right-corner move screenSizeX/2;screenSizeY/2 screenSizeX/2;screenSizeY/2
 alias maximize corner top-left resize:screenSizeX;screenSizeY
 
+# resizing
+# for a window on left/top side, moving the right edge
+bind right:cmd,ctrl resize +100 +0 top-left
+bind left:cmd,ctrl resize -100 +0 top-left
 
+# for a window on the right side, moving the left edge
+bind right:cmd,ctrl,shift resize -100 +0 top-right
+bind left:cmd,ctrl,shift resize +100 +0 top-right moveFirst //buggy, can't move left when pinned to right size b/c resizing first..
+
+# basic bindings
 bind left:cmd,alt,ctrl 	${left-half} 
 bind right:cmd,alt,ctrl ${right-half}
 bind up:cmd,alt,ctrl 	${top-half}
 bind down:cmd,alt,ctrl	${bottom-half}
 
 bind m:cmd,alt,ctrl  	${maximize}
+
+# moving between monitors
+bind left:alt,ctrl throw left resize
+bind right:alt,ctrl throw right resize
+
+
