@@ -9,7 +9,6 @@ config focusCheckWidthMax 3000
 alias mon-thunderbolt 2560x1440
 alias mon-air 1440x900
 
-
 # standard move aliases
 alias left-half corner top-left resize:screenSizeX/2;screenSizeY 
 alias right-half move screenSizeX/2;0 screenSizeX/2;screenSizeY 
@@ -21,17 +20,24 @@ alias bottom-left-corner move 0;screenSizeY/2 screenSizeX/2;screenSizeY/2
 alias bottom-right-corner move screenSizeX/2;screenSizeY/2 screenSizeX/2;screenSizeY/2
 alias maximize corner top-left resize:screenSizeX;screenSizeY
 
-# resizing
+alias left-plus-400 corner top-left resize:screenSizeX/2+400;screenSizeY
+
+# resizing aliases
+alias pin-left-increase-right resize +100 +0 top-left
+alias pin-left-decrease-right resize -100 +0 top-left
+alias pin-right-increase-left resize +100 +0 top-right
+alias pin-right-decrease-left resize -100 +0 top-right
+
 # for a window on left/top side, moving the right edge
-bind right:cmd,ctrl resize +100 +0 top-left
-bind left:cmd,ctrl resize -100 +0 top-left
+bind right:cmd,ctrl ${pin-left-increase-right}
+bind left:cmd,ctrl ${pin-left-decrease-right}
 
 # for a window on the right side, moving the left edge
-bind right:cmd,ctrl,shift resize -100 +0 top-right
-bind left:cmd,ctrl,shift resize +100 +0 top-right moveFirst //buggy, can't move left when pinned to right size b/c resizing first..
+bind right:cmd,ctrl,shift ${pin-right-decrease-left}
+bind left:cmd,ctrl,shift ${pin-right-increase-left} top-right moveFirst //buggy, can't move left when pinned to right size b/c resizing first..
 
 # basic bindings
-bind left:cmd,alt,ctrl 	${left-half} 
+bind left:cmd,alt,ctrl chain ${left-half} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${left-plus-400} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right}
 bind right:cmd,alt,ctrl ${right-half}
 bind up:cmd,alt,ctrl 	${top-half}
 bind down:cmd,alt,ctrl	${bottom-half}
