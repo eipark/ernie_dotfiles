@@ -19,6 +19,7 @@ alias top-right-corner move screenSizeX/2;0 screenSizeX/2;screenSizeY/2
 alias bottom-left-corner move 0;screenSizeY/2 screenSizeX/2;screenSizeY/2
 alias bottom-right-corner move screenSizeX/2;screenSizeY/2 screenSizeX/2;screenSizeY/2
 alias maximize corner top-left resize:screenSizeX;screenSizeY
+alias center move screenSizeX/5;0 3*screenSizeX/5;screenSizeY
 
 alias left-plus-400 corner top-left resize:screenSizeX/2+400;screenSizeY
 
@@ -33,14 +34,20 @@ bind right:cmd,ctrl ${pin-left-increase-right}
 bind left:cmd,ctrl ${pin-left-decrease-right}
 
 # for a window on the right side, moving the left edge
-bind right:cmd,ctrl,shift ${pin-right-decrease-left}
-bind left:cmd,ctrl,shift ${pin-right-increase-left} top-right moveFirst //buggy, can't move left when pinned to right size b/c resizing first..
+#bind right:cmd,ctrl,shift ${pin-right-decrease-left}
+#bind left:cmd,ctrl,shift ${pin-right-increase-left} top-right moveFirst //buggy, can't move left when pinned to right size b/c resizing first..
 
 # basic bindings
-bind left:cmd,alt,ctrl chain ${left-half} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${left-plus-400} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right}
+#bind left:cmd,alt,ctrl chain ${left-half} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${left-plus-400} | ${pin-left-decrease-right} | ${pin-left-decrease-right} | ${pin-left-decrease-right}
+bind left:cmd,alt,ctrl ${left-half}
 bind right:cmd,alt,ctrl ${right-half}
 bind up:cmd,alt,ctrl 	${top-half}
 bind down:cmd,alt,ctrl	${bottom-half}
+bind c:cmd,alt,ctrl ${center}
+bind right:cmd,alt,shift ${bottom-right-corner}
+bind up:cmd,alt,shift ${top-right-corner}
+bind left:cmd,alt,shift ${top-left-corner}
+bind down:cmd,alt,shift ${bottom-left-corner}
 
 bind m:cmd,alt,ctrl  	${maximize}
 
