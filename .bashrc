@@ -88,6 +88,10 @@ function prompt_simple {
   PS2="> "
 }
 
+hg_ps1() {
+    hg prompt "{[hg: {branch}]}{ at {bookmark}}{status}" 2> /dev/null
+}
+
 function prompt_fancy {
   unset PROMPT_COMMAND
   # Shows user@host in the title
@@ -112,7 +116,7 @@ function prompt_fancy {
 	else
 		xxx=""
 	fi
-	PS1="${xxx}${PS1} \n${R}♥  ${W} "
+	PS1="${xxx}${PS1}$(hg_ps1) \n${R}♥  ${W} "
 
   PS2="> "
 }
