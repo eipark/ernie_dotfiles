@@ -114,8 +114,7 @@ function prompt_fancy {
 		xxx=""
 	fi
 	PS1="${xxx}${PS1}"
-  PS1=$PS1'$(__hg_ps1) \n'
-	PS1=$PS1"${R}♥  ${W}"
+  PS1=$PS1"$(__hg_ps1) \n${R}♥  ${W}"
   PS2="> "
 }
 
