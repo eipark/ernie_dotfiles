@@ -39,7 +39,6 @@ alias m="mate ."
 alias school="cd ~/Dropbox/School/Year4"
 alias g="git"
 alias v="vim"
-alias f="hg"
 # ====================
 # EDITOR and  PAGER
 # ====================
