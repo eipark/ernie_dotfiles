@@ -7,4 +7,3 @@
 # ./add_alias.sh new_alias_name command_to_be_performed_in_quotes
 echo "alias "$1"='"$2"'" >> ~/ernie_dotfiles/local_aliases
 source ~/.bashrc
-alias
