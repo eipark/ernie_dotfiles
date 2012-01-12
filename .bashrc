@@ -39,6 +39,11 @@ alias m="mate ."
 alias school="cd ~/Dropbox/School/Year4"
 alias g="git"
 alias v="vim"
+
+if [ -f ~/ernie_dotfiles/local_aliases ]; then
+	. ~/ernie_dotfiles/local_aliases
+fi
+
 # ====================
 # EDITOR and  PAGER
 # ====================
