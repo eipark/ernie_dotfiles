@@ -1,5 +1,6 @@
 [extensions]
 color = 
 prompt = ~/ernie_dotfiles/hg-prompt/prompt.py
+graphlog =
 [ui]
 username = Ernie Park <eipark@mit.edu>

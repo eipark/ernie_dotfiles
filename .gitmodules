@@ -1,0 +1,3 @@
+[submodule "plugins/aliaser"]
+	path = plugins/aliaser
+	url = git@github.com:eipark/aliaser.git
