@@ -26,4 +26,5 @@ set number
 
 if has ("gui_running")
 	set guioptions=egmrt
+	set guioptions-=r " disable right scrollbar 
 endif
