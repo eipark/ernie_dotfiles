@@ -2,5 +2,6 @@
 color = 
 prompt = ~/ernie_dotfiles/plugins/hg-prompt/prompt.py
 graphlog =
+hgshelve=/Users/eipark/ernie_dotfiles/hgshelve/hgshelve.py
 [ui]
 username = Ernie Park <eipark@mit.edu>
