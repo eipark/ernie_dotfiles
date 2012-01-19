@@ -23,7 +23,7 @@ set showcmd
 set ruler
 
 set number
-
+set cursorline cursorcolumn
 if has ("gui_running")
 	set guioptions=egmrt
 	set guioptions-=r " disable right scrollbar 
