@@ -1,0 +1,10 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =8
+let g:netrw_dirhist_1='/Users/eipark/git_repos/mitx_all/templates'
+let g:netrw_dirhist_2='/Users/eipark/git_repos/mitx_all/mitx/courseware'
+let g:netrw_dirhist_3='/Users/eipark/ernie_dotfiles'
+let g:netrw_dirhist_4='/private/etc'
+let g:netrw_dirhist_5='/Users/eipark/git_repos/mitx_all/templates/sass'
+let g:netrw_dirhist_6='/Users/eipark/git_repos/mitx_all'
+let g:netrw_dirhist_7='/Users/eipark/git_repos/mitx_all/mitx'
+let g:netrw_dirhist_8='/Users/eipark'

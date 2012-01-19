@@ -1,3 +1,5 @@
+call pathogen#infect()
+
 syntax on
 set tabstop=2 
 set shiftwidth=2
@@ -13,3 +15,4 @@ set showcmd
 set ruler
 
 set number
+

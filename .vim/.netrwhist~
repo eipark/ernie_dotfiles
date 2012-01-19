@@ -1,0 +1,6 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =4
+let g:netrw_dirhist_1='/Users/eipark/git_repos/mitx_all/templates'
+let g:netrw_dirhist_2='/Users/eipark/git_repos/mitx_all/mitx/courseware'
+let g:netrw_dirhist_3='/Users/eipark/ernie_dotfiles'
+let g:netrw_dirhist_4='/private/etc'
