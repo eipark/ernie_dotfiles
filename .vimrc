@@ -10,9 +10,13 @@ let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
 colorscheme solarized
 
+set expandtab
 set tabstop=2 
 set shiftwidth=2
 set softtabstop=2
+
+set listchars=tab:>\ ,trail:•,extends:>,precedes:<,nbsp:+ "show hard tabs/trailing spaces/etc
+set list                          " show trailing whiteshace and tabs
 set mouse=a 
 
 set title
@@ -24,6 +28,7 @@ set ruler
 
 set number
 set cursorline cursorcolumn
+set autoindent
 if has ("gui_running")
 	set guioptions=egmrt
 	set guioptions-=r " disable right scrollbar 
