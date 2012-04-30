@@ -41,8 +41,8 @@ bind down:cmd,alt,shift   ${bottom-left-quad}
 bind m:cmd,alt,ctrl       ${maximize}
 
 # moving between monitors
-bind left:alt,ctrl throw 1 resize
-bind right:alt,ctrl throw 0 resize
+bind left:alt,ctrl throw 0 resize
+bind right:alt,ctrl throw 1 resize
 
 # window hints (a la vimium)
 bind esc:cmd hint ASDFGHJKLBNVMCERTYUIO
