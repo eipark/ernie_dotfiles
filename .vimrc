@@ -35,7 +35,6 @@ set pastetoggle=<F2>            " when in insert mode, press <F2> to go to
                                 " that won't be autoindented
 set listchars=tab:▸\ ,trail:•,extends:>,precedes:<,nbsp:+ "show hard tabs/trailing spaces/etc
 set list                        "show trailing whiteshace and tabs
-set term=builtin_ansi                "should fix arrows
 
 " change the mapleader from \ to ,
 let mapleader=","
