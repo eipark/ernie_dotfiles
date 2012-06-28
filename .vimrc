@@ -62,6 +62,13 @@ map <C-j> <C-w>j
 map <C-k> <C-w>k
 map <C-l> <C-w>l
 
+"switch between relative and absolute line numbers
+set rnu
+au InsertEnter * :set nu
+au InsertLeave * :set rnu
+au FocusLost * :set nu
+au FocusGained * :set rnu
+
 "for macvim
 if has ("gui_running")
   set guioptions=egmrt
