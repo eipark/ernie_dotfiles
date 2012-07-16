@@ -110,7 +110,7 @@ function prompt_fancy {
   export GIT_PS1_SHOWUNTRACKEDFILES=1
 
   # Put it all together
-  PS1="${TITLEBAR}${P}[\t] ${Y}[\u@\h] ${C}[\w]"
+  PS1="${TITLEBAR}${P}[\@] ${Y}[\u@\h] ${C}[\w]"
   # rvm status
   #[[ $(type -t rvm) = "function" ]] && PS1="${PS1} ${R}[\$(rvm current)]"
   # git status

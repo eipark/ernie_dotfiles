@@ -35,6 +35,7 @@ set pastetoggle=<F2>            " when in insert mode, press <F2> to go to
                                 " that won't be autoindented
 set listchars=tab:▸\ ,trail:•,extends:>,precedes:<,nbsp:+ "show hard tabs/trailing spaces/etc
 set list                        "show trailing whiteshace and tabs
+set nobackup
 
 " change the mapleader from \ to ,
 let mapleader=","
@@ -63,11 +64,11 @@ map <C-k> <C-w>k
 map <C-l> <C-w>l
 
 "switch between relative and absolute line numbers
-set rnu
-au InsertEnter * :set nu
-au InsertLeave * :set rnu
-au FocusLost * :set nu
-au FocusGained * :set rnu
+"set rnu
+"au InsertEnter * :set nu
+"au InsertLeave * :set rnu
+"au FocusLost * :set nu
+"au FocusGained * :set rnu
 
 "for macvim
 if has ("gui_running")
