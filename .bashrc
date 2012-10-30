@@ -127,3 +127,6 @@ function prompt_fancy {
 }
 
 prompt_fancy
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
