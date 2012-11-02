@@ -62,9 +62,8 @@ export LS_COLORS="ex=31:di=36:ln=35"
 # ====================
 # Bash Completion
 # ====================
-if [ -f /opt/local/etc/bash_completion ]; then
-  . /opt/local/etc/bash_completion
-fi
+
+. ~/ernie_dotfiles/bash_completion
 
 # ====================
 # Source file specific only to this computer
