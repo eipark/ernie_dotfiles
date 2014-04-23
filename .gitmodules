@@ -1,3 +1,6 @@
 [submodule "plugins/aliaser"]
 	path = plugins/aliaser
 	url = git@github.com:eipark/aliaser.git
+[submodule ".vim/bundle/mustache"]
+	path = .vim/bundle/mustache
+	url = git://github.com/mustache/vim-mode.git

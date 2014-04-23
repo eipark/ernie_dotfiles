@@ -3,15 +3,16 @@ call pathogen#infect()
 syntax enable
 " file types
 au BufRead,BufNewFile *.twig set filetype=htmljinja
+au BufRead,BufNewFile *.hamlpy set filetype=haml
 
-set background=dark
+"set background=dark
 
 " solarized options
 " termcolors should be off, but it looks better with it in the terminal! find these colors!
 "let g:solarized_termcolors = 256
-let g:solarized_visibility = "high"
+"let g:solarized_visibility = "high"
 "let g:solarized_contrast = "high"
-colorscheme solarized
+colorscheme molokai
 
 set showmode                    "always show current (editing) mode
 set expandtab                   "expand tabs by default
@@ -75,3 +76,6 @@ if has ("gui_running")
   set guioptions=egmrt
   set guioptions-=r             "disable right scrollbar
 endif
+
+map <C-c> :.w !pbcopy<CR>
+"map <C-v> :r !pbpaste<CR>

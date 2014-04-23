@@ -45,8 +45,8 @@ bind down:cmd,alt,shift   ${bottom-left-quad}
 bind m:cmd,alt,ctrl       ${maximize}
 
 # moving between monitors
-bind left:alt,ctrl throw 0 resize
-bind right:alt,ctrl throw 1 resize
+bind left:alt,ctrl throw left resize
+bind right:alt,ctrl throw right resize
 
 # window hints (a la vimium)
 bind esc:cmd hint ASDFGHJKLBNVMCERTYUIO
@@ -62,10 +62,27 @@ config switchIconPadding 10
 config switchType window
 
 # Layout
-layout air-tb 'iTunes'                 throw 0 resize | ${maximize}
+#layout air-tb 'iTunes'                 throw 0 resize | ${maximize}
 #layout air-tb 'iTerm'           throw 0 resize | corner top-right resize:${half-width}
 #layout air-tb 'Google Chrome':REPEAT   throw 1 resize | ${left-half}
-layout air-tb 'Adium'                  ${tb-chat}
+#layout air-tb 'Adium'                  ${tb-chat}
+
+# Layout MBP
+layout mbp 'iTerm' ${maximize}
+layout mbp 'Google Chrome':REPEAT ${maximize}
+layout mbp 'HipChat':REPEAT ${maximize}
+layout mbp 'YNAB 4' ${maximize}
+layout mbp 'Spotify' ${maximize}
+layout mbp 'Evernote':REPEAT ${maximize}
+
+
+# Layout Thunderbolt
+layout thunderbolt 'iTerm' ${maximize}
+layout thunderbolt 'Google Chrome':REPEAT ${maximize}
+layout thunderbolt 'HipChat':REPEAT ${maximize}
+layout thunderbolt 'YNAB 4' ${maximize}
+layout thunderbolt 'Spotify' ${maximize}
+layout thunderbolt 'Evernote':REPEAT ${maximize}
 
 # Layout Bindings
-bind padEnter:cmd layout air-tb
+bind 8:cmd,alt,ctrl layout thunderbolt

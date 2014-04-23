@@ -27,19 +27,16 @@ bind "set completion-ignore-case on"
 export BASH_ENV ENV PATH PS1 DISPLAY
 
 export PATH="$HOME/bin:$PATH"
-source ~/bin/git-completion.bash
+source ~/ernie_dotfiles/git-completion.bash
 #PS1='[\u@\h \w$(__git_ps1 " (%s)")]\$ '
+
+export PATH=$PATH:/opt/local/bin:/opt/local/sbin:/Users/epark/bin:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/bin:/usr/local/sbin:/opt/local/bin
 
 if [ -f ~/.comp_specific_bash_profile ]; then
 	. ~/.comp_specific_bash_profile
 fi
 
-##
-# Your previous /Users/ernestipark/.bash_profile file was backed up as /Users/ernestipark/.bash_profile.macports-saved_2011-08-30_at_01:34:41
-##
 
-# MacPorts Installer addition on 2011-08-30_at_01:34:41: adding an appropriate PATH variable for use with MacPorts.
-export PATH=/opt/local/bin:/opt/local/sbin:$PATH
-# Finished adapting your PATH environment variable for use with MacPorts.
+alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
 
-[[ -s "$HOME/.rvm/scripts/rvm" ]] && . "$HOME/.rvm/scripts/rvm" # Load RVM function
+alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'

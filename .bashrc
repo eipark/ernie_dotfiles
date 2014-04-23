@@ -34,11 +34,11 @@ alias pro="vim ~/.bash_profile"
 alias srcrc="source ~/.bashrc"
 alias srcpro="source ~/.bash_profile"
 alias ~="cd ~"
-alias gogit="cd ~/git_repos"
-alias m="mate ."
-alias school="cd ~/Dropbox/School/Year4"
 alias g="git"
 alias v="vim"
+alias dot="cd ~/ernie_dotfiles"
+alias locals="dot && v local_aliases"
+alias csrc="~ && v .comp_specific_bashrc"
 
 if [ -f ~/ernie_dotfiles/local_aliases ]; then
 	. ~/ernie_dotfiles/local_aliases
@@ -66,6 +66,12 @@ export LS_COLORS="ex=31:di=36:ln=35"
 . ~/ernie_dotfiles/bash_completion
 
 # ====================
+
+# ===================
+
+function title () {
+  echo -ne "\033]0;"$@"\007"
+}
 # Source file specific only to this computer
 # ====================
 if [ -f ~/.comp_specific_bashrc ] ; then
@@ -75,7 +81,7 @@ fi
 # ====================
 # PROMPT
 # ====================
-# Colorsx`
+# Colors
 K="\[\033[0;30m\]"
 R="\[\033[0;31m\]"
 G="\[\033[0;32m\]"
@@ -95,7 +101,7 @@ function prompt_simple {
 function prompt_fancy {
   unset PROMPT_COMMAND
   # Shows user@host in the title
-  TITLEBAR="\[\033]0;\u@\h\007\]"
+  # TITLEBAR="\[\033]0;\u@\h\007\]"
   # Shows a "*" next to the branch name if you have un-staged local changes
   # Shows a "+" next to the branch name if you have staged local changes
   export GIT_PS1_SHOWDIRTYSTATE=1
@@ -123,5 +129,6 @@ function prompt_fancy {
 
 prompt_fancy
 
-### Added by the Heroku Toolbelt
-export PATH="/usr/local/heroku/bin:$PATH"
+alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
+
+alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
