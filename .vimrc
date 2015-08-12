@@ -14,6 +14,7 @@ au BufRead,BufNewFile *.hamlpy set filetype=haml
 "let g:solarized_contrast = "high"
 colorscheme molokai
 
+set clipboard+=unnamed
 set showmode                    "always show current (editing) mode
 set expandtab                   "expand tabs by default
 set tabstop=2                   "tab is 2 spaces
@@ -40,6 +41,9 @@ set nobackup
 
 " change the mapleader from \ to ,
 let mapleader=","
+
+" jsx highlighting in .js files for react
+let g:jsx_ext_required=0
 
 "use semicolon instead of colon
 nnoremap ; :
@@ -79,3 +83,14 @@ endif
 
 map <C-c> :.w !pbcopy<CR>
 "map <C-v> :r !pbpaste<CR>
+
+" make arrows useful
+nnoremap <up> :m-2<CR>==
+nnoremap <down> :m+<CR>==
+nnoremap <left> <<
+nnoremap <right> >>
+" better context when scrolling
+set scrolloff=8
+
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*     " MacOSX/Linux
+
