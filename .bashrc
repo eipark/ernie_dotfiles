@@ -128,7 +128,3 @@ function prompt_fancy {
 }
 
 prompt_fancy
-
-alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
-
-alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
