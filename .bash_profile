@@ -36,7 +36,3 @@ if [ -f ~/.comp_specific_bash_profile ]; then
 	. ~/.comp_specific_bash_profile
 fi
 
-
-alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
-
-alias deployer-dev='/Users/epark/dev/src/fabric_deploy/.dev-virtualenv/bin/deployer'
