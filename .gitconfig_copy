@@ -1,0 +1,28 @@
+[alias]
+  co = checkout
+  ci = commit
+  st = status
+  br = branch
+  hist = log --pretty=format:\"%h %ad | %s%d [%an]\" --graph --date=short
+  type = cat-file -t
+  dump = cat-file -p
+  lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr)%C(bold blue)<%an>%Creset' --abbrev-commit
+  join = !sh -c 'git checkout -t origin/"$0"'
+[user]
+  name = Ernie Park
+  email = epark@hubspot.com
+[rerere]
+  enabled = 1
+[hub]
+  host = git.hubteam.com
+[color]
+  ui = true
+[filter "media"]
+  clean = git-media-clean %f
+  smudge = git-media-smudge %f
+[filter "hawser"]
+  clean = git hawser clean %f
+  smudge = git hawser smudge %f
+  required = true
+[core]
+	pager = diff-highlight | diff-so-fancy | less --tabs=1,5 -R
