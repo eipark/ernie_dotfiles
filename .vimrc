@@ -93,6 +93,8 @@ nnoremap <right> >>
 set scrolloff=8
 
 set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*.meteor     " MacOSX/Linux
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+
 
 
 " syntastic
