@@ -7,6 +7,7 @@
 export HOME=~
 export TERM=xterm-256color
 
+
 set -o vi                                         # vi mode
 bind -m vi-insert "\C-l":clear-screen             # Restore ^L to clear screen
 bind -m vi-insert "\C-p":dynamic-complete-history # ^p check for partial match in history
@@ -16,7 +17,8 @@ bind -m vi-insert "\C-n":menu-complete            # cycle through the list of pa
 # Path
 # ====================
 test -d "$HOME/bin" && PATH=$HOME/bin:$PATH
-export PATH
+export GEM_HOME=/Library/Ruby/Gems/2.0.0
+export PATH=$PATH:$GEM_HOME:/Users/epark/.gem/ruby/2.0.0:/System/Library/Frameworks/Ruby.framework/Versions/2.0/usr/lib/ruby/gems/2.0.0
 
 # ====================
 # Aliases
