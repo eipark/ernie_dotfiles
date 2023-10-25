@@ -92,8 +92,8 @@ nnoremap <right> >>
 " better context when scrolling
 set scrolloff=8
 
-set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*.meteor     " MacOSX/Linux
-let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip,*/node_modules/*,*.meteor,*.next     " MacOSX/Linux
+let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git|next'
 
 
 
@@ -112,6 +112,10 @@ let g:ctrlp_custom_ignore = 'node_modules\|DS_Store\|git'
 "let g:syntastic_javascript_eslint_exec = 'eslint --cache'
 " Syntastic defines :Errors, so :E is not enough for :Ex now, so explicit map
 command E Ex
+
+
+"https://github.com/fatih/vim-go/issues/3171
+set re=0
 
 
 

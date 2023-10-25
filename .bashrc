@@ -41,6 +41,9 @@ alias v="vim"
 alias dot="cd ~/ernie_dotfiles"
 alias locals="dot && v local_aliases"
 alias csrc="~ && v .comp_specific_bashrc"
+alias gpoh="git push origin head"
+alias wdwr="dev && cd wdwr"
+alias runvite="npx vite"
 
 if [ -f ~/ernie_dotfiles/local_aliases ]; then
 	. ~/ernie_dotfiles/local_aliases
